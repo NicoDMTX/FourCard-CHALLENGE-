@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    overflow: none  ;
 }
 
 :root{
@@ -37,6 +38,11 @@
     font-size: 24px;
 }
 
+.container__fourCards{
+    display: flex;
+    justify-content: center;
+}
+
 .substitles{
     font-weight: bold;
     color: var(--fifth);
@@ -53,80 +59,44 @@
 .return__line{
     text-align: center;
 }
-
-.teamBuilder__container{
-    width: 100%;
+.twoCard__container{
     display: flex;
-    padding-top: 20px;
-    align-items: center;
     flex-direction: column;
-}
-
-.teamBuilder__box{
-    box-sizing: border-box;
-    box-shadow: 0 0 20px -10px black;
-    border-radius: 10px;
-    width: 20%;
-    padding: 20px;
-}
-
-.teamBuilder__title{
-    font-size: 20px;
-    color: var(--fifth);
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-}
-
-.teamBuilder__description{
-    font-family: 'Poppins', sans-serif;
-    color: var(--sixth);
-    font-size: 12px;
-    padding-bottom: 50px;
-}
-
-.karma__container{
-    width: 100%;
-    display: flex;
-    padding-top: 20px;
     align-items: center;
-    flex-direction: column;
-}
-
-.karma__box{
-    box-sizing: border-box;
-    box-shadow: 0 0 20px -10px black;
-    border-radius: 10px;
-    width: 20%;
-    padding: 20px;
-}
-
-.karma__title{
-    font-size: 20px;
-    color: var(--fifth);
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-}
-
-.karma__description{
-    font-family: 'Poppins', sans-serif;
-    color: var(--sixth);
-    font-size: 12px;
-    padding-bottom: 50px;
+    padding: 25px;
 }
 
 .supervisor__container{
-    width: 100%;
     display: flex;
-    padding-top: 20px;
-    flex-direction: column;
+    padding-top: 25px;
+    align-items: center;
 }
 
 .supervisor__box{
     box-sizing: border-box;
     box-shadow: 0 0 20px -10px black;
-    border-radius: 10px;
-    width: 20%;
+    border-radius: 5px;
     padding: 20px;
+    width: 250px;
+    height: 200px;
+    border-top: solid;
+}
+
+.supervisor__box--red{
+    border-color: hsl(0, 78%, 62%);
+    margin-bottom: 15px;
+}
+
+.supervisor__box--cyan{
+    border-color: hsl(180, 62%, 55%);
+}
+
+.supervisor__box--orange{
+    border-color:hsl(34, 97%, 64%);
+}
+
+.supervisor__box--blue{
+    border-color:hsl(212, 86%, 64%);
 }
 
 .supervisor__title{
@@ -134,11 +104,24 @@
     color: var(--fifth);
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 5px;
 }
 
-.supervisor_description{
+.supervisor__description{
     font-family: 'Poppins', sans-serif;
     color: var(--sixth);
     font-size: 12px;
-    padding-bottom: 50px;
+}
+
+.calculator__container{
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+}
+
+
+.icons{
+    display:flex;
+    justify-content: flex-end;
+    padding: 15px 0px 0px 0px;
 }
